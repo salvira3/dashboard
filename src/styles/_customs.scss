@@ -16,3 +16,24 @@ body {
   color: #666;
   line-height: 1;
 }
+
+.title-page {
+  color: #919191
+}
+
+.collapse-title {
+  width: 100%;
+  color: white;
+  background: #5DAD58;
+}
+
+.collapse-title a {
+  color: white;
+  text-decoration: underline;
+}
+
+.help {
+  @media only screen and (max-width: 992px) {
+    display: none;
+  }
+}

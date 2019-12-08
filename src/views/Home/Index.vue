@@ -1,78 +1,42 @@
 <template>
   <v-layout>
-    <v-card contextual-style="dark">
-      <span slot="header">
-        {{ $t('general.welcome') }}
-      </span>
-      <div slot="body">
-        <p>
-          Get started with the Vue 2 boilerplate
-        </p>
-        <p>
-          For questions, contact me:
-        </p>
-        <p>
-          <a
-            class="btn btn-outline-primary"
-            href="http://gitter.im/petervmeijgaard"
-            target="_blank"
-          >
-            <i
-              class="fa fa-github fa-fw"
-              aria-hidden="true"
-            />
-            <span class="pl-2">
-              Gitter
-            </span>
-          </a>
-          <a
-            class="btn btn-outline-primary"
-            href="http://github.com/petervmeijgaard"
-            target="_blank"
-          >
-            <i
-              class="fa fa-github fa-fw"
-              aria-hidden="true"
-            />
-            <span class="pl-2">
-              GitHub
-            </span>
-          </a>
-          <a
-            class="btn btn-outline-primary"
-            href="http://twitter.com/petervmeijgaard"
-            target="_blank"
-          >
-            <i
-              class="fa fa-twitter fa-fw"
-              aria-hidden="true"
-            />
-            <span class="pl-2">
-              Twitter
-            </span>
-          </a>
-        </p>
-        <p>
-          For bugs, see:
-        </p>
-        <a
-          class="btn btn-outline-primary"
-          href="https://github.com/petervmeijgaard/vue-2.0-boilerplate/issues"
-          target="_blank"
-        >
-          <i
-            class="fa fa-github fa-fw"
-            aria-hidden="true"
-          />
-          <span class="pl-2">
-            GitHub
-          </span>
-        </a>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h1 class="title-page">Dashboard</h1>
+        </div>
+        <div class="col-sm-6"/>
       </div>
-      <div slot="footer">
-        Made with love by Vivid Web
+      <div
+        v-b-toggle.marketContent
+        class="row collapse-title">
+        <div class="col-9">
+          <div class="text-uppercase p-2">Market insights</div>
+        </div>
+        <div class="col-3">
+          <div class="p-2">
+            <span class="fa fa-lightbulb-o mr-2 help" /><a
+              href="#"
+              class="help">Click here for help</a>
+            <span
+              class="fa fa-angle-up ml-2"
+              style="font-size: 25px" />
+          </div>
+        </div>
       </div>
-    </v-card>
+      <b-collapse id="marketContent">
+        <div class="row">
+          <div class="col-sm-3">
+            mini-card here
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6">Graphic here</div>
+          <div class="col-3">Product Card here</div>
+          <div class="col-3">Product Card here</div>
+        </div>
+      </b-collapse>
+    </div>
   </v-layout>
 </template>
 
