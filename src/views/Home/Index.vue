@@ -1,6 +1,6 @@
 <template>
   <v-layout>
-    <div class="container">
+    <div class="container pb-5">
       <div class="row">
         <div class="col-sm-6">
           <h1 class="title-page">Dashboard</h1>
@@ -39,8 +39,16 @@
           <div class="col-6">
             <graphic-card/>
           </div>
-          <div class="col-3">Product Card here</div>
-          <div class="col-3">Product Card here</div>
+          <div class="col-3">
+            <product-card
+              :title="'best selling sku'"
+              :list="my_list" />
+          </div>
+          <div class="col-3">
+            <product-card
+              :title="'top competitor sku'"
+              :list="other_list" />
+          </div>
         </div>
       </b-collapse>
     </div>
@@ -59,6 +67,7 @@ import VLayout from '@/layouts/Default.vue';
 import VCard from '@/components/Card.vue';
 import MiniCard from '@/components/MiniCard.vue';
 import GraphicCard from '@/components/GraphicCard.vue';
+import ProductCard from '@/components/ProductCard.vue';
 
 export default {
   /**
@@ -74,11 +83,46 @@ export default {
     VCard,
     MiniCard,
     GraphicCard,
+    ProductCard,
   },
 
   data() {
     return {
       visible: true,
+      my_list: [
+        {
+          image_url: 'bag.png', nama_produk: 'Nama Produk', harga: 10000, jml_terjual: 10,
+        },
+        {
+          image_url: 'bag.png', nama_produk: 'Nama Produk', harga: 10000, jml_terjual: 10,
+        },
+        {
+          image_url: 'bag.png', nama_produk: 'Nama Produk', harga: 10000, jml_terjual: 10,
+        },
+        {
+          image_url: 'bag.png', nama_produk: 'Nama Produk', harga: 10000, jml_terjual: 10,
+        },
+        {
+          image_url: 'bag.png', nama_produk: 'Nama Produk', harga: 10000, jml_terjual: 10,
+        },
+      ],
+      other_list: [
+        {
+          image_url: 'pony.png', nama_produk: 'Nama Produk', harga: 20000, jml_terjual: 50,
+        },
+        {
+          image_url: 'pony.png', nama_produk: 'Nama Produk', harga: 20000, jml_terjual: 50,
+        },
+        {
+          image_url: 'pony.png', nama_produk: 'Nama Produk', harga: 20000, jml_terjual: 50,
+        },
+        {
+          image_url: 'pony.png', nama_produk: 'Nama Produk', harga: 20000, jml_terjual: 50,
+        },
+        {
+          image_url: 'pony.png', nama_produk: 'Nama Produk', harga: 20000, jml_terjual: 50,
+        },
+      ],
     };
   },
 };
