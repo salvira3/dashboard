@@ -37,7 +37,7 @@
         </div>
         <div class="row pt-5">
           <div class="col-6">
-            <graphic-card/>
+            <graphic-card />
           </div>
           <div class="col-3">
             <product-card

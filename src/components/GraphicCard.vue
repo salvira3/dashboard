@@ -30,8 +30,4 @@ export default {
 </script>
 
 <style lang="sass" scoped>
-  .my-card
-    background: white
-    border-radius: 3px
-    box-shadow: -2.5px 2.5px 3px rgba(146, 146, 146, 0.3)
 </style>
