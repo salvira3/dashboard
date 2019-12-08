@@ -7,6 +7,16 @@
 
 import Vue from 'vue';
 
+/*
+ * ===========
+ * Package
+ * ===========
+ *
+ *  Import package
+ */
+
+import BootstrapVue from 'bootstrap-vue';
+
 /* ============
  * Plugins
  * ============
@@ -52,6 +62,8 @@ import App from './App.vue';
 import store from './store';
 
 Vue.config.productionTip = false;
+
+Vue.use(BootstrapVue);
 
 store.dispatch('auth/check');
 

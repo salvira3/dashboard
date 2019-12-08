@@ -1,58 +1,40 @@
 <template>
-  <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <router-link
-        :to="{ name: 'home.index' }"
-        class="navbar-brand"
-      >
-        Vue 2 Boilerplate
-      </router-link>
+  <div class="my-content">
+    <b-navbar
+      toggleable="sm"
+      type="light"
+      class="my-navbar">
+      <b-navbar-brand href="#">
+        <img
+          src="../assets/img/advotics-logo.jpg"
+          style="height: 30px" >
+      </b-navbar-brand>
 
-      <button
-        class="navbar-toggler"
-        type="button"
-        @click="toggleMenu"
-      >
-        <span class="navbar-toggler-icon"/>
-      </button>
+      <b-navbar-toggle target="nav-collapse"/>
 
-      <div
-        :class="{ show : menuCollapsed}"
-        class="collapse navbar-collapse"
-      >
-        <ul class="navbar-nav mr-auto">
-          <router-link
-            :to="{ name: 'home.index' }"
-            active-class="active"
-            class="nav-item"
-            tag="li"
-          >
-            <a class="nav-link">
-              Home
-            </a>
-          </router-link>
-          <router-link
-            :to="{ name: 'account.index' }"
-            active-class="active"
-            class="nav-item"
-            tag="li"
-          >
-            <a class="nav-link">
-              Account
-            </a>
-          </router-link>
-        </ul>
-        <span class="navbar-text">
-          <a
-            class="btn btn-secondary"
-            href="#"
-            @click.prevent="logout"
-          >
-            <i class="fa fa-sign-out"/>
-          </a>
-        </span>
-      </div>
-    </nav>
+      <b-collapse
+        id="nav-collapse"
+        is-nav>
+        <b-navbar-nav/>
+        <b-navbar-nav class="ml-auto">
+          <p
+            class="text-md-center mr-3 mb-0 acc-info">Username <br>
+            <span
+              style="font-size: 10px; color: #777">
+              Company Name
+            </span>
+          </p>
+          <span
+            class="fa fa-user-circle mr-4"
+            style="font-size: 30px; color: #BDBEC0"/>
+          <span
+            class="fa fa-sign-out align-middle mt-1"
+            style="font-size: 20px; color: #BDBEC0"/>
+        </b-navbar-nav>
+      </b-collapse>
+
+
+    </b-navbar>
 
     <div class="container pt-4">
       <div class="row">
