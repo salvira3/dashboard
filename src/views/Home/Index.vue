@@ -35,8 +35,10 @@
               percentage="33,8"/>
           </div>
         </div>
-        <div class="row">
-          <div class="col-6">Graphic here</div>
+        <div class="row pt-5">
+          <div class="col-6">
+            <graphic-card/>
+          </div>
           <div class="col-3">Product Card here</div>
           <div class="col-3">Product Card here</div>
         </div>
@@ -56,6 +58,7 @@
 import VLayout from '@/layouts/Default.vue';
 import VCard from '@/components/Card.vue';
 import MiniCard from '@/components/MiniCard.vue';
+import GraphicCard from '@/components/GraphicCard.vue';
 
 export default {
   /**
@@ -70,6 +73,7 @@ export default {
     VLayout,
     VCard,
     MiniCard,
+    GraphicCard,
   },
 
   data() {
