@@ -8,8 +8,8 @@
         <div class="col-sm-6"/>
       </div>
       <div
-        v-b-toggle.marketContent
-        class="row collapse-title">
+        class="row collapse-title"
+        @click="visible = !visible">
         <div class="col-9">
           <div class="text-uppercase p-2">Market insights</div>
         </div>
@@ -24,10 +24,15 @@
           </div>
         </div>
       </div>
-      <b-collapse id="marketContent">
-        <div class="row">
-          <div class="col-sm-3">
-            mini-card here
+      <b-collapse
+        id="marketContent"
+        v-model="visible">
+        <div class="row pt-5">
+          <div class="col-sm-4">
+            <mini-card
+              title="Sales Turnover"
+              total="3600000"
+              percentage="33,8"/>
           </div>
         </div>
         <div class="row">
@@ -50,6 +55,7 @@
 
 import VLayout from '@/layouts/Default.vue';
 import VCard from '@/components/Card.vue';
+import MiniCard from '@/components/MiniCard.vue';
 
 export default {
   /**
@@ -63,6 +69,13 @@ export default {
   components: {
     VLayout,
     VCard,
+    MiniCard,
+  },
+
+  data() {
+    return {
+      visible: true,
+    };
   },
 };
 </script>
