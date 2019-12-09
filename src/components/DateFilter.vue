@@ -79,6 +79,9 @@ export default {
   .period-title
     color: #8B8B8B
     width: 100%
-
+  .vue-daterange-picker ::v-deep .reportrange-text
+    border:0 !important
+  .form-control
+    border:0 !important
 
 </style>

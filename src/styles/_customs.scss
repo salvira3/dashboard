@@ -29,6 +29,7 @@ body, html {
 .collapse-title {
   color: white;
   background: #5DAD58;
+  cursor: pointer;
 }
 
 .collapse-title a {
@@ -53,5 +54,16 @@ body, html {
   background-color: transparent !important;
   color: #37B04C !important;
   font-weight: 700;
+}
+.daterangepicker td.in-range {
+  background-color: #e3fce7 !important;
+  border-color: transparent;
+  color: #000;
+  border-radius: 0;
+}
+.daterangepicker td.active, .daterangepicker td.active:hover {
+  background-color: #37B04C !important;
+  border-color: transparent;
+  color: #fff;
 }
     
