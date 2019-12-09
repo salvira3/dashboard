@@ -2,13 +2,15 @@
   <v-layout>
     <div class="container pb-5">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-7">
           <h1 class="title-page">Dashboard</h1>
         </div>
-        <div class="col-sm-6"/>
+        <div class="col-sm-5">
+          <date-filter/>
+        </div>
       </div>
       <div
-        class="row collapse-title"
+        class="row collapse-title mt-4"
         @click="visible = !visible">
         <div class="col-9">
           <div class="text-uppercase p-2">Market insights</div>
@@ -68,6 +70,8 @@ import VCard from '@/components/Card.vue';
 import MiniCard from '@/components/MiniCard.vue';
 import GraphicCard from '@/components/GraphicCard.vue';
 import ProductCard from '@/components/ProductCard.vue';
+import DateFilter from '@/components/DateFilter.vue';
+
 
 export default {
   /**
@@ -84,6 +88,7 @@ export default {
     MiniCard,
     GraphicCard,
     ProductCard,
+    DateFilter,
   },
 
   data() {

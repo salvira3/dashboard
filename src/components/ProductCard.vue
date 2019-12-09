@@ -1,5 +1,5 @@
 <template>
-  <div class="my-card p-4">
+  <div class="my-card p-3">
     <div class="row">
       <div class="col-10">
         <p class="title-card font-weight-bold text-uppercase">{{ title }}</p>
@@ -8,7 +8,7 @@
         <span class="fa fa-ellipsis-v"/>
       </div>
     </div>
-    <div class="row">
+    <div class="row p-2">
       <div
         v-for="(item, index) in list"
         :key="item.id">
@@ -21,7 +21,7 @@
                 src="../assets/img/bag.png"
                 class="my-img-thumbnail">
             </div>
-            <div class="col-7 pl-0">
+            <div class="col-7">
               <p class="mt-2 font-weight-bold">{{ item.nama_produk }}</p>
               <p class="my-item">
                 {{ intToRupiah(item.harga) }}
@@ -41,7 +41,7 @@
                 src="../assets/img/bag.png"
                 class="my-img-thumbnail">
             </div>
-            <div class="col-8 pl-0">
+            <div class="col-8">
               <p class="mt-2 font-weight-bold">{{ item.nama_produk }}</p>
               <p class="my-item">
                 {{ intToRupiah(item.harga) }}

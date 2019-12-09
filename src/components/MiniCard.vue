@@ -9,7 +9,7 @@
             class="fa fa-long-arrow-down"
             style="color:red"/> <span
               style="color:red"
-              class="font-weight-bold ml-1">{{ percentage }}%</span> last periods in products sold??
+              class="font-weight-bold ml-1">{{ percentage }}%</span> last period in products sold
         </small>
       </div>
       <div class="col-2">

@@ -52,7 +52,9 @@ export default {
             // return gross+=nettnya?
             var total = 0;
             for (var i = 0; i < data.datasets.length; i++) {
-              total += data.datasets[i].data[tooltipItem.index];
+              if (data.datasets[i].label !== "test") {
+                total += data.datasets[i].data[tooltipItem.index];
+              }
             }
             if (myIndex === "Gross") {
               return myIndex + " " + Number(total)
