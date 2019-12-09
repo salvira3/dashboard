@@ -2,7 +2,7 @@
   <div class="my-card p-3">
     <div class="row">
       <div class="col-10">
-        <p class="title-card font-weight-bold text-uppercase">{{ title }}</p>
+        <p class="title-card text-uppercase">{{ title }}</p>
       </div>
       <div class="col-2">
         <span class="fa fa-ellipsis-v"/>
@@ -22,7 +22,7 @@
                 class="my-img-thumbnail">
             </div>
             <div class="col-7">
-              <p class="mt-2 font-weight-bold">{{ item.nama_produk }}</p>
+              <p class="mt-2">{{ item.nama_produk }}</p>
               <p class="my-item">
                 {{ intToRupiah(item.harga) }}
                 <span class="ml-2">{{ item.jml_terjual }} terjual</span>
@@ -42,7 +42,7 @@
                 class="my-img-thumbnail">
             </div>
             <div class="col-8">
-              <p class="mt-2 font-weight-bold">{{ item.nama_produk }}</p>
+              <p class="mt-2">{{ item.nama_produk }}</p>
               <p class="my-item">
                 {{ intToRupiah(item.harga) }}
                 <span class="ml-2">{{ item.jml_terjual }} terjual</span>

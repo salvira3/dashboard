@@ -2,7 +2,7 @@
   <div class="my-card p-4">
     <div class="row">
       <div class="col-10">
-        <h4 class="title-card font-weight-bold">{{ title }}</h4>
+        <h4 class="title-card">{{ title }}</h4>
         <h3 class="font-weight-bold pt-3">{{ intToRupiah(total) }}</h3>
         <small>
           <span

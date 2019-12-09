@@ -2,7 +2,7 @@
   <div class="my-card p-4">
     <div class="row">
       <div class="col-11">
-        <h4 class="title-card font-weight-bold text-uppercase">average purchase value</h4>
+        <h4 class="title-card text-uppercase">average purchase value</h4>
         <bar-chart/>
       </div>
       <div class="col-1">
