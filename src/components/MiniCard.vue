@@ -3,6 +3,15 @@
     <div class="row">
       <div class="col-10">
         <h4 class="title-card">{{ title }}</h4>
+
+      </div>
+      <div class="col-2">
+        <span class="fa fa-ellipsis-v text-right"/>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-9">
         <h3 class="font-weight-bold pt-3">{{ intToRupiah(total) }}</h3>
         <small>
           <span
@@ -12,8 +21,10 @@
               class="font-weight-bold ml-1">{{ percentage }}%</span> last period in products sold
         </small>
       </div>
-      <div class="col-2">
-        <span class="fa fa-ellipsis-v"/>
+      <div class="col-3">
+        <img
+          src="../assets/img/sales.svg"
+          class="pt-4">
       </div>
     </div>
 

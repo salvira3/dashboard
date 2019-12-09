@@ -15,13 +15,13 @@
         <div class="col-9">
           <div class="text-uppercase p-2">Market insights</div>
         </div>
-        <div class="col-3">
+        <div class="col-3 text-right">
           <div class="p-2">
             <span class="fa fa-lightbulb-o mr-2 help" /><a
               href="#"
               class="help">Click here for help</a>
             <span
-              class="fa fa-angle-up ml-2"
+              class="fa fa-angle-up ml-4"
               style="font-size: 25px" />
           </div>
         </div>
