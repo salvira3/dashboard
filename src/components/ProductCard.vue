@@ -18,7 +18,7 @@
           <div class="row">
             <div class="col-5">
               <img
-                src="../assets/img/bag.png"
+                :src="require('../assets/img/' + item.image_url )"
                 class="my-img-thumbnail">
             </div>
             <div class="col-7">
@@ -38,7 +38,7 @@
           <div class="row">
             <div class="col-4">
               <img
-                src="../assets/img/bag.png"
+                :src="require('../assets/img/' + item.image_url )"
                 class="my-img-thumbnail">
             </div>
             <div class="col-8">
