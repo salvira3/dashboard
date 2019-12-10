@@ -64,7 +64,7 @@ export default {
         applyLabel: 'Apply',
         cancelLabel: 'Cancel',
         weekLabel: 'W',
-        customRangeLabel: 'Custom Range',
+        customRangeLabel: 'Custom',
         daysOfWeek: moment.weekdaysMin(), // array of days - see moment documenations for details
         monthNames: moment.monthsShort(), // array of month names - see moment documenations for details
         firstDay: 1, // ISO first day of week - see moment documenations for details
