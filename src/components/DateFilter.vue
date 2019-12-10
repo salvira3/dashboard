@@ -6,6 +6,7 @@
       :locale-data="locale"
       :opens="opens"
       :ranges="ranges"
+      :min-date="minDate"
       :max-date="maxDate"
       class="w-100 p-3"
       @update="console.log(value)"
@@ -49,10 +50,11 @@ export default {
         startDate: moment().subtract(1, 'week'),
         endDate: moment().subtract(1, 'days'),
       },
+      minDate: moment().subtract(6, 'month'),
       maxDate: moment().subtract(1, 'days'),
       opens: 'center',
       ranges: { // default value for ranges object (if you set this to false ranges will no be rendered)
-        Yesterday: [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+        'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
         'This month': [moment().startOf('month'), moment()],
         'Last 7 days': [moment().subtract(1, 'week').startOf('week'), moment().subtract(1, 'week').endOf('week')],
         'Last 30 days': [moment().subtract(1, 'month'), moment().subtract(1, 'days')],
