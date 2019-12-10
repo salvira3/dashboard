@@ -25,7 +25,11 @@ export default {
           backgroundColor: '#4F9B50',
           data: [3000, 2000, 1000, 1000, 1500, 2100]
         },
-        
+        {
+          label: 'Unit per Transaction',
+          backgroundColor: '#707070',
+          data: [7, 6, 5, 4, 3, 2]
+        },
       ]
     },
     options: {
@@ -50,14 +54,21 @@ export default {
             // for tooltipitem y label
             // if y label === gross
             // return gross+=nettnya?
+            // if y label ===
             var total = 0;
             for (var i = 0; i < data.datasets.length; i++) {
-              if (data.datasets[i].label !== "test") {
+              if (data.datasets[i].label !== "test" || data.datasets[i].label !== "Unit per Transaction") {
                 total += data.datasets[i].data[tooltipItem.index];
               }
             }
             if (myIndex === "Gross") {
               return myIndex + " " + Number(total)
+            }
+            if (myIndex === "Average Purchase Value") {
+              return "APV" + " " + Number(tooltipItem.yLabel)
+            }
+            if (myIndex === "Unit per Transaction") {
+              return "UPT" + " " + Number(tooltipItem.yLabel)
             }
             if (myIndex === "test") {
               return false
